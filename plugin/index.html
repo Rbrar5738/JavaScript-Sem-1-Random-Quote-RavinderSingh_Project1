@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bxSlider Plugin</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="jquery.bxslider.css" rel="stylesheet">
+</head>
+
+<body>
+    <section>
+        <h1>Famous Personalities</h1>
+        <p>This is our attribute to the famous personalities aroud the word and below are the picutes of few of them.</p>
+        <ul id="slider">
+            <li><img src="images/Churchill.jpg" alt="Image of Churchill" title="Winston Churchill" width="300" height="300"></li>
+            <li><img src="images/edison.jpg" alt="Image of edison" title="Thomas Edison" width="300" height="300"> </li>
+            <li><img src="images/Einstein.jpg" alt="Image of Einstein" title="Albert Einstein" width="300" height="300"></li>
+            <li><img src="images/gandhi.jpg" alt="Image of gandhi" title="Mahatma Gandhi" width="300" height="300"></li>
+            <li><img src="images/linclon.jpeg" alt="Image of linclon" title="Abraham Lincoln" width="300" height="300"></li>
+            <li><img src="images/motherteresa.jpg" alt="Image of motherteresa" title="Mother Teresa" width="300" height="300"></li>
+            <li><img src="images/nelsonmandela.jpg" alt="Image of nelsonmandela" title="Nelson Mandela" width="300" height="300"></li>
+            <li><img src="images/shakespeare.jpg" alt="Image of shakespeare" title="William Shakespeare"></li>
+            <li><img src="images/stevejobs.jpg" alt="Image of stevejobs" title="Steve Jobs" width="300" height="300"></li>
+        </ul>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.bxSlider.min.js"></script>
+    <!-- Call to the bxSlider function -->
+    <script>
+        $(document).ready( () => 
+            $("#slider").bxSlider({
+              auto: true,
+              autoControls: true,
+              captions: true,
+              minSlides: 2,
+              maxSlides: 2,
+              slideWidth: 250,
+              slideMargin: 10
+            })
+        )
+    </script>
+</body>
+</html>

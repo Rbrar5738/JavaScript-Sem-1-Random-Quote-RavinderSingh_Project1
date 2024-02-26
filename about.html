@@ -1,0 +1,70 @@
+<!-- ********************************************************************
+/* Student Name : Ravinder Singh                                    */
+/* Student ID   : 8915738                                           */
+/********************************************************************-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+    <link rel="stylesheet" href="quote.css">    
+
+ <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+ <link rel="stylesheet" type="text/css" href="./jquery-ui-1.13.2/jquery-ui.min.css">
+  
+</head>
+<body>
+    <header><h2>Random Quote Generator</h2></header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="famous.html">Famous Peronalities</a></li>
+        </ul>
+    </nav>
+    <main id="about">
+        
+       <section>
+        <div id ="tabs">  
+            <ul>
+                <li><a href="#tabs-1">About Me</a></li>
+                <li><a href="#tabs-2">About Random Quote Generator</a></li>
+               
+            </ul>   
+              <div id="tabs-1">      
+               
+                <img src="me.jpg" alt="Picuter of Ravinder Singh">
+            
+            <p>My Name is Ravinder Singh Brar and I am a student of Conestoga college, Doon cammpus, Kitchener, Ontario, Canada. I am studying Web Development and my student number is 8915738. I am a student of first semester. I enrolled in Fall session i.e. September 2023 session. This random quote generator website is an individual project for my subject Java Script Programming. My professor for this subject is Mr. Dotun Adeoye and i have coded this project under his guideliness.
+            </p>
+        </div>
+    
+        
+       <div id="tabs-2">        
+               
+                            
+            <p>Welcome to our Random Quote Generato. Here every click generate a new Quote. Here, we don't just generate quotes; rather we release a informative and motivative thogoughts of famous personalities around the globe. We unfold with each click, and a journey into the unknown where the next profound insight awaits.
+            </p>
+        </div>
+    </div>
+</section>
+
+      
+</main>
+<br><br><br>
+<footer>
+    <small>&copy; "Ravinder Singh/8915738" 2023</small>
+</footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./jquery-ui-1.13.2/jquery-ui.min.js"></script>
+    <script>
+        $(document).ready( () =>
+            $("#tabs").tabs()
+        )
+
+</script>
+</body>
+</html>
